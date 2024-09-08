@@ -195,3 +195,44 @@ div a {
   margin-top: 0; /* Remove a margem superior */
   font-family: 'Star Wars', sans-serif; /* Fonte temática */
 }
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 768px) {
+  /* Ajuste no contêiner de cartões para um cartão por linha */
+  .card-container {
+    width: 100%;
+    grid-template-columns: 1fr; /* Um cartão por linha */
+    gap: 16px; /* Espaçamento entre os cartões */
+    padding: 10px; /* Reduz o padding para telas menores */
+  }
+
+  /* Ajuste no tamanho dos cartões para que ocupem a largura total */
+  .card {
+    width: 90%; /* O cartão ocupa a largura total */
+    padding: 10px; /* Ajuste no padding */
+    margin: 0;
+  }
+
+  /* Ajuste no filtro para centralizar e reduzir margens */
+  .filtros {
+    flex-direction: column;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .filtro-center {
+    margin-left: 0;
+    margin-right: 0;
+    width: 70%; /* Ajuste na largura para se adequar a telas pequenas */
+  }
+
+  /* Ajustes no campo de busca para ocupar a largura total */
+  .input-container {
+    width: 90%; /* O input ocupa a largura total no celular */
+    margin:  auto; /* Mantém centralizado */
+  }
+
+  .buscar {
+    width: 100%; /* Ajusta a largura para 100% */
+    font-size: 12px; /* Fonte ligeiramente menor em dispositivos móveis */
+  }
+}

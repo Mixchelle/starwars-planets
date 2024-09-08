@@ -70,3 +70,10 @@ body::before {
 ::-webkit-scrollbar-thumb:vertical {
   width: 16px; /* Largura da barra de rolagem vertical */
 }
+
+@media (max-width: 768px) {
+  .st{
+    width: 100%;
+    margin-left: 0;
+  }
+}

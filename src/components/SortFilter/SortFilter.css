@@ -39,3 +39,44 @@
 .sort-filter button:hover {
   background-color: #ffc107;
 }
+
+@media (max-width: 600px) {
+  .sort-filter {
+    flex-direction: column; /* Apila los elementos en lugar de alinearlos en fila */
+    gap: 8px; /* Reduce el espacio entre elementos */
+    margin: 15px; /* Ajusta los márgenes para una mejor visualización en móviles */
+  }
+
+  .sort-filter select,
+  .sort-filter input,
+  .sort-filter button {
+    padding: 10px; /* Aumenta el padding para mejorar la interacción táctil */
+    font-size: 16px; /* Mejora la legibilidad en pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .sort-filter input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .sortOrder {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #f1f0f0;
+  }
+
+  .sort-filter button {
+    background-color: #ffd700;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    height: auto; /* Ajusta el alto automáticamente */
+  }
+
+  .sort-filter button:hover {
+    background-color: #ffc107;
+  }
+}

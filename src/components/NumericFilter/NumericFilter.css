@@ -25,3 +25,34 @@
 .numeric-filter button:hover {
   background-color: #ffc107;
 }
+@media (max-width: 600px) {
+  .numeric-filter {
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px ;
+  }
+
+  .numeric-filter select,
+  .numeric-filter input,
+  .numeric-filter button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    border-radius: 4px;
+  }
+  .numeric-filter input{
+    width: 94%;
+  }
+
+  .numeric-filter button {
+    background-color: #ffd700;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    height: auto; /* Ajusta el alto automáticamente */
+  }
+
+  .numeric-filter button:hover {
+    background-color: #ffc107;
+  }
+}

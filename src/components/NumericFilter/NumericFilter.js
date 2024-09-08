@@ -1,6 +1,7 @@
 // src/components/NumericFilter/NumericFilter.js
 import React, { useState, useContext } from 'react';
 import PlanetContext from '../../context/PlanetContext';
+import RemoveAllFilters from '../RemoveAllFilters/RemoveAllFilters';
 import './NumericFilter.css';
 
 function NumericFilter() {
@@ -52,6 +53,7 @@ function NumericFilter() {
       >
         Filtrar
       </button>
+      <RemoveAllFilters />
     </div>
   );
 }

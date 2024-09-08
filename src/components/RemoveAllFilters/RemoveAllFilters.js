@@ -10,7 +10,7 @@ function RemoveAllFilters() {
       data-testid="button-remove-filters"
       onClick={ removeAllFilters }
     >
-      Remover Todos os Filtros
+      Limpar filtros
     </button>
   );
 }
