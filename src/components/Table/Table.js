@@ -1,10 +1,10 @@
+/* eslint-disable max-len */
 import React, { useContext } from 'react';
 import PlanetContext from '../../context/PlanetContext';
 import './Table.css';
 import NumericFilter from '../NumericFilter/NumericFilter';
 import SortFilter from '../SortFilter/SortFilter';
 import FilterApplied from '../FilterApplied/FilterApplied';
-import img from '../../assets/dart.png';
 // Importando todas as imagens
 import yaviniv from '../../assets/planets/yaviniv.png';
 import tatooine from '../../assets/planets/tatooine.png';
@@ -42,11 +42,6 @@ function Table() {
     const month = String(date.getUTCMonth() + 1).padStart(2, '0');
     const year = date.getUTCFullYear();
     return `${day}/${month}/${year}`;
-  }
-
-  function shortenUrl(url) {
-    const matches = url.match(/\/([0-9]+)\/$/);
-    return matches ? matches[1] : url;
   }
 
   return (

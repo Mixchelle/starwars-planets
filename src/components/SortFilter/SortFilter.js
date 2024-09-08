@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 // src/components/SortFilter/SortFilter.js
 import React, { useState, useContext } from 'react';
 import PlanetContext from '../../context/PlanetContext';

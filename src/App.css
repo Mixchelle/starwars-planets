@@ -2,14 +2,14 @@
 body {
   background-color: #282c34;
   background-image: url('./assets/fundo.jpg');
-  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
-  background-size: cover; /* Faz a imagem cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
 }
 
 body::before {
   content: '';
-  position: fixed; /* Use fixed para cobrir toda a tela */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
@@ -19,7 +19,7 @@ body::before {
   background-size: cover;
   background-position: center;
   filter: blur(8px);
-  z-index: -1; /* Faz o pseudo-elemento estar atrás do conteúdo */
+  z-index: -1;
 }
 
 

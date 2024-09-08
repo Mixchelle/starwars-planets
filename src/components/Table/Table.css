@@ -162,8 +162,6 @@ div a {
   animation: rotate 2s linear infinite;
 }
 
-
-//* Estilização do contêiner de cartões */
 .card-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
