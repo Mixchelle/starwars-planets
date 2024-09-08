@@ -1,9 +1,20 @@
+// src/App.js
 import React from 'react';
+import PlanetProvider from './context/PlanetProvider';
+import { Table } from './components/Table/Table';
+import img from './assets/st.png';
 import './App.css';
 
 function App() {
   return (
-    <span>Hello, App!</span>
+    <PlanetProvider>
+      <div>
+        <div className="background-overlay" />
+
+        <img className="st" src={ img } alt="" />
+        <Table />
+      </div>
+    </PlanetProvider>
   );
 }
 

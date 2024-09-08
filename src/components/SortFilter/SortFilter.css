@@ -1,0 +1,41 @@
+/* src/components/SortFilter/SortFilter.css */
+.sort-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 20px;
+}
+
+.sort-filter select,
+.sort-filter input,
+.sort-filter button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.sort-filter input[type="radio"] {
+  margin-right: 5px;
+}
+
+.sortOrder{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color:  #f1f0f0;
+}
+
+.sort-filter button {
+  background-color: #ffd700;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 70px;
+}
+
+.sort-filter button:hover {
+  background-color: #ffc107;
+}

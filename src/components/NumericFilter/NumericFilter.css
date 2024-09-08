@@ -1,0 +1,27 @@
+.numeric-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.numeric-filter select,
+.numeric-filter input,
+.numeric-filter button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.numeric-filter button {
+  background-color: #ffd700;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  height: 70px;
+}
+
+.numeric-filter button:hover {
+  background-color: #ffc107;
+}

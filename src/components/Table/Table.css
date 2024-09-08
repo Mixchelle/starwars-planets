@@ -1,0 +1,197 @@
+src/components/Table/Table.css
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #333; /* Fundo escuro para a tabela */
+  color: #fff; /* Texto branco para contraste */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444; /* Borda sutil em preto */
+}
+
+thead {
+  background-color: #000; /* Fundo preto para o cabeçalho */
+}
+
+thead th {
+  color: #ffd700; /* Amarelo para o texto do cabeçalho */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #444; /* Fundo cinza escuro para linhas pares */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #555; /* Fundo cinza médio para linhas ímpares */
+}
+
+a {
+  color: #ffd700; /* Cor amarela para links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinha quando o mouse está sobre o link */
+}
+
+a:visited {
+  color: #ffd700; /* Cor amarela para links visitados */
+}
+
+a:focus {
+  outline: none; /* Remove o contorno de foco padrão */
+}
+
+div a {
+  display: block;
+  padding: 5px 0;
+}
+
+
+
+/* Estilização do contêiner do input e ícone */
+.input-container {
+  position: relative;
+  width: 80%; /* Largura do campo de entrada */
+  margin: 0 auto 10px auto; /* Centraliza horizontalmente e espaço abaixo */
+}
+
+/* Estilização do campo de filtro */
+.buscar {
+  width: 100%; /* Largura igual ao contêiner */
+  border-radius: 40px;
+  height: 40px;
+  padding: 0 40px 0 20px; /* Espaçamento interno para o ícone */
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color:transparent; /* Fundo cinza médio */
+  color: #fff; /* Texto branco */
+  border: 2px solid #ffd700; /* Borda amarela */
+  box-sizing: border-box; /* Inclui a borda e o padding na largura total */
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.buscar::placeholder {
+  color: #aaa; /* Cor do texto do placeholder */
+}
+
+.buscar:focus {
+  outline: none; /* Remove o contorno padrão ao focar no campo */
+}
+
+/* Estilização do ícone de busca */
+.search-icon {
+  position: absolute;
+  right: 10px; /* Espaçamento do ícone da borda direita */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente o ícone */
+  fill: #ffd700; /* Cor do ícone, se desejar alterar */
+}
+
+.filtros{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-left: 15%;
+}
+
+.filtro-center{
+  margin-left: 40%;
+  margin-right: 30%;
+  width: 40%;
+  align-content: center;
+}
+
+
+/* Estilização do contêiner de cartões */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
+  gap: 16px; /* Espaçamento entre os cartões */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 1200px; /* Largura máxima do contêiner */
+  padding: 16px; /* Espaçamento interno */
+}
+
+/* Estilização de cada cartão */
+.card {
+  background-color: #020202; 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card h3 {
+  margin-top: 0; /* Remove a margem superior */
+}
+
+.card a {
+  color: #ffd700; /* Cor amarela para links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.card a:hover {
+  text-decoration: underline; /* Sublinha quando o mouse está sobre o link */
+}
+/* Define a rotação padrão */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%; /* Faz com que a imagem pareça circular */
+  transition: transform 0.5s ease;
+}
+
+/* Anima a rotação contínua quando o mouse está sobre a imagem */
+.planet-image:hover {
+  animation: rotate 2s linear infinite;
+}
+
+
+//* Estilização do contêiner de cartões */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
+  gap: 20px; /* Espaçamento entre os cartões */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 1200px; /* Largura máxima do contêiner */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilização de cada cartão */
+.card {
+  background-color: #000000; 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+  text-align: center; /* Centraliza o texto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de brilho ao passar o mouse sobre o cartão */
+.card:hover {
+  transform: scale(1.05); /* Aumenta um pouco o tamanho do cartão */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+/* Estilização do título do cartão */
+.card h3 {
+  margin-top: 0; /* Remove a margem superior */
+  font-family: 'Star Wars', sans-serif; /* Fonte temática */
+}

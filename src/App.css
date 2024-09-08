@@ -1,41 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media ( prefers-reduced-motion : no-preference ) {
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  align-items: center;
+*{margin: 0;}
+body {
   background-color: #282c34;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
-  justify-content: center;
-  min-height: 100vh;
+  background-image: url('./assets/fundo.jpg');
+  background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem de fundo */
 }
 
-.App-link {
-  color: #61dafb;
+body::before {
+  content: '';
+  position: fixed; /* Use fixed para cobrir toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1; /* Faz o pseudo-elemento estar atrás do conteúdo */
 }
 
-@keyframes App-logo-spin {
 
-  from {
-    transform: rotate(0deg);
-  }
+.st{
+  width: 30%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 35%;
+  margin-bottom: 0;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+/* Estilização geral da barra de rolagem */
+::-webkit-scrollbar {
+  width: 16px; /* Largura da barra de rolagem vertical */
+  height: 16px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilização da trilha (a parte onde a barra de rolagem se move) */
+::-webkit-scrollbar-track {
+  background: #222; /* Cor de fundo escura para a trilha */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilização do polegar (a parte que o usuário arrasta) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f7e100, #f2c300); /* Gradiente em tons de amarelo */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.7); /* Sombra amarela para efeito de brilho */
+  transition: background 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Estilização do polegar ao passar o mouse sobre ele */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #f2c300, #f7e100); /* Alterar gradiente ao passar o mouse */
+  box-shadow: 0 0 12px rgba(255, 255, 0, 1); /* Intensificar a sombra ao passar o mouse */
+}
+
+/* Estilização da barra de rolagem horizontal */
+::-webkit-scrollbar-thumb:horizontal {
+  height: 16px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilização da barra de rolagem vertical */
+::-webkit-scrollbar-thumb:vertical {
+  width: 16px; /* Largura da barra de rolagem vertical */
 }

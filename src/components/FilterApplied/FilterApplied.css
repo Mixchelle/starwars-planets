@@ -1,0 +1,56 @@
+/* FilterApplied.css */
+
+.filter-applied-card {
+  background-color: #ffeb3b; /* Amarelo claro */
+  border: 1px solid #fdd835; /* Cor de borda um pouco mais escura */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.bixinho{
+  width: 300px;
+}
+.filter-applied-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.filter-applied-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter__bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.filter__text {
+  margin-right: 10px;
+  color: #333; /* Cor de texto ajustada para melhor contraste */
+}
+
+.filter__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff0000; /* Cor do ícone de remover */
+}
+
+.filter__button:hover {
+  color: #d32f2f; /* Cor do ícone ao passar o mouse */
+}
