@@ -1,15 +1,18 @@
-*{margin: 0;}
+* {
+  margin: 0;
+}
+
 body {
   background-color: #282c34;
   background-image: url('./assets/fundo.jpg');
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 body::before {
   content: '';
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,8 +25,7 @@ body::before {
   z-index: -1;
 }
 
-
-.st{
+.st {
   width: 30%;
   align-content: center;
   align-items: center;
@@ -32,47 +34,38 @@ body::before {
   margin-bottom: 0;
 }
 
-
-
-
-/* Estilização geral da barra de rolagem */
 ::-webkit-scrollbar {
-  width: 16px; /* Largura da barra de rolagem vertical */
-  height: 16px; /* Altura da barra de rolagem horizontal */
+  width: 16px;
+  height: 16px;
 }
 
-/* Estilização da trilha (a parte onde a barra de rolagem se move) */
 ::-webkit-scrollbar-track {
-  background: #222; /* Cor de fundo escura para a trilha */
-  border-radius: 8px; /* Bordas arredondadas */
+  background: #222;
+  border-radius: 8px;
 }
 
-/* Estilização do polegar (a parte que o usuário arrasta) */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #f7e100, #f2c300); /* Gradiente em tons de amarelo */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 0 8px rgba(255, 255, 0, 0.7); /* Sombra amarela para efeito de brilho */
-  transition: background 0.3s ease; /* Transição suave para a mudança de cor */
+  background: linear-gradient(135deg, #f7e100, #f2c300);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.7);
+  transition: background 0.3s ease;
 }
 
-/* Estilização do polegar ao passar o mouse sobre ele */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #f2c300, #f7e100); /* Alterar gradiente ao passar o mouse */
-  box-shadow: 0 0 12px rgba(255, 255, 0, 1); /* Intensificar a sombra ao passar o mouse */
+  background: linear-gradient(135deg, #f2c300, #f7e100);
+  box-shadow: 0 0 12px rgba(255, 255, 0, 1);
 }
 
-/* Estilização da barra de rolagem horizontal */
 ::-webkit-scrollbar-thumb:horizontal {
-  height: 16px; /* Altura da barra de rolagem horizontal */
+  height: 16px;
 }
 
-/* Estilização da barra de rolagem vertical */
 ::-webkit-scrollbar-thumb:vertical {
-  width: 16px; /* Largura da barra de rolagem vertical */
+  width: 16px;
 }
 
 @media (max-width: 768px) {
-  .st{
+  .st {
     width: 100%;
     margin-left: 0;
   }

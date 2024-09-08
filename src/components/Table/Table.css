@@ -1,47 +1,47 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #333; /* Fundo escuro para a tabela */
-  color: #fff; /* Texto branco para contraste */
+  background-color: #333;
+  color: #fff;
 }
 
 th, td {
   padding: 10px;
   text-align: left;
-  border: 1px solid #444; /* Borda sutil em preto */
+  border: 1px solid #444;
 }
 
 thead {
-  background-color: #000; /* Fundo preto para o cabeçalho */
+  background-color: #000;
 }
 
 thead th {
-  color: #ffd700; /* Amarelo para o texto do cabeçalho */
+  color: #ffd700;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #444; /* Fundo cinza escuro para linhas pares */
+  background-color: #444;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #555; /* Fundo cinza médio para linhas ímpares */
+  background-color: #555;
 }
 
 a {
-  color: #ffd700; /* Cor amarela para links */
-  text-decoration: none; /* Remove sublinhado */
+  color: #ffd700;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Sublinha quando o mouse está sobre o link */
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #ffd700; /* Cor amarela para links visitados */
+  color: #ffd700;
 }
 
 a:focus {
-  outline: none; /* Remove o contorno de foco padrão */
+  outline: none;
 }
 
 div a {
@@ -49,97 +49,99 @@ div a {
   padding: 5px 0;
 }
 
-
-
-/* Estilização do contêiner do input e ícone */
 .input-container {
   position: relative;
-  width: 80%; /* Largura do campo de entrada */
-  margin: 0 auto 10px auto; /* Centraliza horizontalmente e espaço abaixo */
+  width: 80%;
+  margin: 0 auto 10px auto;
 }
 
-/* Estilização do campo de filtro */
 .buscar {
-  width: 100%; /* Largura igual ao contêiner */
+  width: 100%;
   border-radius: 40px;
   height: 40px;
-  padding: 0 40px 0 20px; /* Espaçamento interno para o ícone */
+  padding: 0 40px 0 20px;
   font-size: 14px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color:transparent; /* Fundo cinza médio */
-  color: #fff; /* Texto branco */
-  border: 2px solid #ffd700; /* Borda amarela */
-  box-sizing: border-box; /* Inclui a borda e o padding na largura total */
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ffd700;
+  box-sizing: border-box;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 .buscar::placeholder {
-  color: #aaa; /* Cor do texto do placeholder */
+  color: #aaa;
 }
 
 .buscar:focus {
-  outline: none; /* Remove o contorno padrão ao focar no campo */
+  outline: none;
 }
 
-/* Estilização do ícone de busca */
 .search-icon {
   position: absolute;
-  right: 10px; /* Espaçamento do ícone da borda direita */
+  right: 10px;
   top: 50%;
-  transform: translateY(-50%); /* Centraliza verticalmente o ícone */
-  fill: #ffd700; /* Cor do ícone, se desejar alterar */
+  transform: translateY(-50%);
+  fill: #ffd700;
 }
 
-.filtros{
+.filtros {
   display: flex;
   text-align: center;
   align-content: center;
   margin-left: 15%;
 }
 
-.filtro-center{
+.filtro-center {
   margin-left: 40%;
   margin-right: 30%;
   width: 40%;
   align-content: center;
 }
 
-
-/* Estilização do contêiner de cartões */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
-  gap: 16px; /* Espaçamento entre os cartões */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  max-width: 1200px; /* Largura máxima do contêiner */
-  padding: 16px; /* Espaçamento interno */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
 }
 
-/* Estilização de cada cartão */
 .card {
-  background-color: #020202; 
-  color: #fff; 
+  background-color: #000000;
+  color: #fff;
   padding: 20px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .card h3 {
-  margin-top: 0; /* Remove a margem superior */
+  margin-top: 0;
+  font-family: 'Star Wars', sans-serif;
 }
 
-.card a {
-  color: #ffd700; /* Cor amarela para links */
-  text-decoration: none; /* Remove sublinhado */
+.planet-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
 }
 
-.card a:hover {
-  text-decoration: underline; /* Sublinha quando o mouse está sobre o link */
+.planet-image:hover {
+  animation: rotate 2s linear infinite;
 }
-/* Define a rotação padrão */
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -149,67 +151,20 @@ div a {
   }
 }
 
-.planet-image {
-  display: block;
-  margin: auto;
-  border-radius: 50%; /* Faz com que a imagem pareça circular */
-  transition: transform 0.5s ease;
-}
-
-/* Anima a rotação contínua quando o mouse está sobre a imagem */
-.planet-image:hover {
-  animation: rotate 2s linear infinite;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dois cartões por linha */
-  gap: 20px; /* Espaçamento entre os cartões */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  max-width: 1200px; /* Largura máxima do contêiner */
-  padding: 20px; /* Espaçamento interno */
-}
-
-/* Estilização de cada cartão */
-.card {
-  background-color: #000000; 
-  color: #fff; 
-  padding: 20px;
-  border-radius: 10px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
-  text-align: center; /* Centraliza o texto */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
-}
-
-/* Efeito de brilho ao passar o mouse sobre o cartão */
-.card:hover {
-  transform: scale(1.05); /* Aumenta um pouco o tamanho do cartão */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
-}
-
-/* Estilização do título do cartão */
-.card h3 {
-  margin-top: 0; /* Remove a margem superior */
-  font-family: 'Star Wars', sans-serif; /* Fonte temática */
-}
-/* Estilos para telas pequenas (celulares) */
 @media (max-width: 768px) {
-  /* Ajuste no contêiner de cartões para um cartão por linha */
   .card-container {
     width: 100%;
-    grid-template-columns: 1fr; /* Um cartão por linha */
-    gap: 16px; /* Espaçamento entre os cartões */
-    padding: 10px; /* Reduz o padding para telas menores */
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 10px;
   }
 
-  /* Ajuste no tamanho dos cartões para que ocupem a largura total */
   .card {
-    width: 90%; /* O cartão ocupa a largura total */
-    padding: 10px; /* Ajuste no padding */
+    width: 90%;
+    padding: 10px;
     margin: 0;
   }
 
-  /* Ajuste no filtro para centralizar e reduzir margens */
   .filtros {
     flex-direction: column;
     margin-left: 0;
@@ -219,17 +174,16 @@ div a {
   .filtro-center {
     margin-left: 0;
     margin-right: 0;
-    width: 70%; /* Ajuste na largura para se adequar a telas pequenas */
+    width: 70%;
   }
 
-  /* Ajustes no campo de busca para ocupar a largura total */
   .input-container {
-    width: 90%; /* O input ocupa a largura total no celular */
-    margin:  auto; /* Mantém centralizado */
+    width: 90%;
+    margin: auto;
   }
 
   .buscar {
-    width: 100%; /* Ajusta a largura para 100% */
-    font-size: 12px; /* Fonte ligeiramente menor em dispositivos móveis */
+    width: 100%;
+    font-size: 12px;
   }
 }

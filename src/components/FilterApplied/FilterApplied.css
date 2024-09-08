@@ -1,21 +1,21 @@
-/* FilterApplied.css */
-
 .filter-applied-card {
-  background-color: #ffeb3b; /* Amarelo claro */
-  border: 1px solid #fdd835; /* Cor de borda um pouco mais escura */
+  background-color: #ffeb3b;
+  border: 1px solid #fdd835;
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.flex{
+
+.flex {
   display: flex;
   flex-direction: row;
 }
 
-.bixinho{
+.bixinho {
   width: 300px;
 }
+
 .filter-applied-title {
   font-size: 18px;
   font-weight: bold;
@@ -41,68 +41,63 @@
 
 .filter__text {
   margin-right: 10px;
-  color: #333; /* Cor de texto ajustada para melhor contraste */
+  color: #333;
 }
 
 .filter__button {
   background: none;
   border: none;
   cursor: pointer;
-  color: #ff0000; /* Cor do ícone de remover */
+  color: #ff0000;
 }
 
 .filter__button:hover {
-  color: #d32f2f; /* Cor do ícone ao passar o mouse */
+  color: #d32f2f;
 }
 
-
-/* Estilos para telas pequenas (celulares) */
 @media (max-width: 768px) {
-  /* Ajuste para o cartão de filtro aplicado ocupar toda a largura */
   .filter-applied-card {
-    padding: 20px; 
+    padding: 20px;
     margin: 0;
     margin-left: 15%;
-    width: 100%; 
+    width: 100%;
   }
 
-  /* Ajuste para a flexbox ficar em coluna nos celulares */
   .flex {
-    flex-direction: column; /* Coloca os elementos em coluna */
+    flex-direction: column;
   }
 
   .bixinho {
-    width: 100%; 
+    width: 100%;
     margin-left: 15%;
   }
 
   .filter-applied-title {
-    font-size: 16px; /* Fonte um pouco menor em dispositivos móveis */
-    text-align: center; /* Centraliza o título para um melhor visual em telas pequenas */
+    font-size: 16px;
+    text-align: center;
   }
 
   .filter-applied-container {
-    gap: 8px; /* Ajuste de espaçamento entre os elementos */
-    width: 100%; /* O container ocupa toda a largura */
+    gap: 8px;
+    width: 100%;
   }
 
-  /* Ajuste da barra de filtro para ocupar a largura total */
   .filter__bar {
-    flex-direction: row; 
-    padding:8px; 
-    width: 90%; 
+    flex-direction: row;
+    padding: 8px;
+    width: 90%;
     margin: 0;
     text-align: center;
   }
 
   .filter__text {
-    margin-right: 0; /* Remove a margem à direita */
-    text-align: center; /* Centraliza o texto */
-    width: 100%; /* O texto ocupa a largura total */
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
   }
 
   .filter__button {
-    text-align: center; /* Centraliza o botão */
-    margin-top: 10px; /* Dá um pouco de espaço acima do botão */
+    text-align: center;
+    margin-top: 10px;
   }
 }
